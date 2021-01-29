@@ -55,10 +55,10 @@ class Airplane {
     poop () {
       this.stomach = []
     } 
-    Person.prototype.toString= function(){
-    return ${this.name},${this.age}
+    toString(){
+    return `${this.name},${this.age}`;
     }
-
+  }
   
   /*
     TASK 2
