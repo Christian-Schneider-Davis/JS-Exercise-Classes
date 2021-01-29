@@ -46,7 +46,8 @@ class Airplane {
       this.name = attrs.name;
       this.age = attrs.age;
       this.stomach = attrs.stomach;
-      }
+      this.toString = attrs.toString;  
+    }
     eat (someFood){
       if (this.stomach.length <= 10);
         this.stomach.push(someFood);
@@ -55,7 +56,7 @@ class Airplane {
     poop () {
       this.stomach = 'empty';
     } 
-
+    
   }
   
   /*
@@ -88,7 +89,7 @@ class Airplane {
 
     if(this.tank <=0){
       this.tank = 0;
-      return 'I ran out of fuel at ${this,odometer} miles!';
+      return 'I ran out of fuel at `${this,odometer}` miles!';
     }
     else {this.tank -= (distance/this.milesPerGallon);
     }
@@ -131,8 +132,14 @@ class Airplane {
           + `demo` receives a `subject` string as an argument and returns the phrase 'Today we are learning about {subject}' where subject is the param passed in.
           + `grade` receives a `student` object and a `subject` string as arguments and returns '{student.name} receives a perfect score on {subject}'
   */
- class Instructor {
+ class Instructor extends Lambdasian {
+  constructor(attrs){
+  super(attrs);
+  this.specialty = attrs.specialty;
+  this.favLanguage = attrs.favLanguage;
+  this.catchPhrase = attrs.catchPhrase;
 
+  }
  }
   /*
     TASK 5
