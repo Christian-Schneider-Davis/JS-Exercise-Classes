@@ -49,7 +49,7 @@ class Airplane {
       this.toString = attrs.toString;  
     }
     eat (someFood){
-      if (this.stomach.length <= 10);
+      if (this.stomach <= 10);
         this.stomach.push(someFood);
         return `${this.name}`,`${this.age}`;
       }
@@ -138,9 +138,13 @@ class Airplane {
   this.specialty = attrs.specialty;
   this.favLanguage = attrs.favLanguage;
   this.catchPhrase = attrs.catchPhrase;
-
   }
- }
+  demo(){
+    console.log( 'Today we are learning about `${this.subject}`.');
+  }
+
+}
+ 
   /*
     TASK 5
       - Write a Student class extending Lambdasian.
