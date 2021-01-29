@@ -139,11 +139,12 @@ class Airplane {
   this.favLanguage = attrs.favLanguage;
   this.catchPhrase = attrs.catchPhrase;
   }
-  demo(){
+   demo(){
     console.log( 'Today we are learning about `${this.subject}`.');
+
+    }
   }
 
-}
  
   /*
     TASK 5
