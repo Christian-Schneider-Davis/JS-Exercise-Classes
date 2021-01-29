@@ -90,7 +90,7 @@ class Airplane {
 
     if(this.tank <=0){
       this.tank = 0;
-      return 'I ran out of fuel at ${this,odometer} miles!'
+      return 'I ran out of fuel at ${this,odometer} miles!';
     }
     else {this.tank -= (distance/this.milesPerGallon);
     }
@@ -109,7 +109,14 @@ class Airplane {
           + {name} and {location} of course come from the instance's own properties.
   */
  class Lambdasian {
-    
+    constructor(attrs) {
+      this.name = attrs.name;
+      this.age = attrs.age;
+      this.location = attrs.location;
+    }
+    speak(){
+      return 'Hello my name is `${this.name}`, I am from `${this.location}`';
+    }
   }
   
   /*
